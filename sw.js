@@ -1,4 +1,6 @@
-var CACHE_NAME = "my_cache";
+var CACHE_VERSION = "V1";
+var CACHE_NAME = "my_cache" + CACHE_VERSION;
+
 var urlsToCache = [
     '/progressive_web_app/index.html',
     '/progressive_web_app/script.js',
@@ -8,11 +10,27 @@ var urlsToCache = [
 
 
 self.addEventListener('install', function(event) {
+    console.log("Current cache version: ", CACHE_NAME);
     event.waitUntil(
         caches.open(CACHE_NAME)
         .then(function(cache) {
             console.log('Opened cache : ', cache);
             return cache.addAll(urlsToCache);
+        })
+    );
+});
+
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function(cacheName) {
+                    return cacheName == CACHE_NAME;
+                }).map(function(cacheName) {
+                    console.log("Deleting Cache : " + cacheName);
+                    return caches.delete(cacheName);
+                })
+            );
         })
     );
 });
