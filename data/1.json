@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "3",
+      "name": "Apple",
+      "price": "37.21",
+      "categoryId": "1"
+    },
+    {
+      "id": "4",
+      "name": "Mango",
+      "price": "37.21",
+      "categoryId": "1"
+    },
+    {
+      "id": "5",
+      "name": "Pineapple",
+      "price": "37.21",
+      "categoryId": "1"
+    }
+  ]
+}

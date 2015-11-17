@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "0",
+      "name": "Nike",
+      "price": "37.21",
+      "categoryId": "0"
+    },
+    {
+      "id": "1",
+      "name": "Adidas",
+      "price": "22.31",
+      "categoryId": "0"
+    },
+    {
+      "id": "2",
+      "name": "Reebok",
+      "price": "56.0",
+      "categoryId": "0"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Service Workers - Update with Post Message</title>
+    <meta http-equiv="Cache-control" content="NO-CACHE">
+    <script type="text/javascript" src="angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="MainController" id="app">
+    <div class="menu">
+        <div class="menu_bar">
+            <span class="title">Lister</span>
+            <div class="menu_button">
+                <div class="bar"></div>
+            </div>
+        </div>
+        <ul class="category_list">
+            <li class="category_item" ng-click="getItems('all')">Home</li>
+            <li class="category_item" ng-click="getItems('0')">Shoes</li>
+            <li class="category_item" ng-click="getItems('1')">Fruits</li>
+            <li class="category_item" ng-click="getItems('2')">Mobile</li>
+        </ul>
+    </div>
+    <ul class="items">
+        <li ng-repeat="item in items">
+            <div class="item" style="animation-delay: .{{ $index }}s">
+                <span>{{ item.name }}</span>
+                <span>{{ item.price }}</span>
+            </div>
+        </li>
+    </ul>
+</body>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="sw.js"></script>
+
+</html>
