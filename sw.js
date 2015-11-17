@@ -1,5 +1,5 @@
 var CACHE_VERSION = "V1";
-var CACHE_NAME = "my_cache" + CACHE_VERSION;
+var CACHE_NAME = "my_cache_" + CACHE_VERSION;
 
 var urlsToCache = [
     '/progressive_web_app/index.html',
