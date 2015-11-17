@@ -2,11 +2,11 @@
     "short_name": "Lister",
     "name": "Lister",
     "icons": [{
-        "src": "icon.png",
+        "src": "/progressive_web_app/icon.png",
         "sizes": "192x192",
         "type": "image/png"
     }],
-    "start_url" : "/index.html",
+    "start_url" : "index.html",
     "display" : "standalone",
     "orientation" : "portrait"
 }
