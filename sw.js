@@ -69,13 +69,12 @@ self.addEventListener('fetch', function(event) {
                                     });
                                 });
                                 return networkResponse;
-                            })
-                            .catch(serveOffline);
+                            });
                     } else {
                         fetchPromise = fetch(clonedRequest).then(function(networkResponse) {
                             cache.put(clonedRequest, networkResponse.clone());
                             return networkResponse;
-                        }).catch(serveOffline);
+                        });
                     }
 
                     return response || fetchPromise;
