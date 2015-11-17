@@ -1,4 +1,4 @@
-var BASE_URL = "/progressive_web_app/data/"
+var BASE_URL = "https://sidthesloth91.github.io/progressive_web_app/data/"
 var PAGE_ROUTES = {
     ALL: "items"
 };
