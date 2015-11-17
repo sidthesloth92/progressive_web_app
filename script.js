@@ -1,4 +1,4 @@
-var BASE_URL = "http://localhost:8080/data/"
+var BASE_URL = "/progressive_web_app/data/"
 var PAGE_ROUTES = {
     ALL: "items"
 };

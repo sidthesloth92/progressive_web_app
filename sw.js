@@ -1,9 +1,9 @@
 var CACHE_NAME = "my_cache";
 var urlsToCache = [
-    '/index.html',
-    '/script.js',
-    '/angular.min.js',
-    '/offline.html'
+    '/progressive_web_app/index.html',
+    '/progressive_web_app/script.js',
+    '/progressive_web_app/angular.min.js',
+    '/progressive_web_app/offline.html'
 ];
 
 
