@@ -1,0 +1,18 @@
+{
+    "items": [{
+        "id": "6",
+        "name": "Nexus 6P",
+        "price": "37.21",
+        "categoryId": "2"
+    }, {
+        "id": "7",
+        "name": "Samsung S6",
+        "price": "37.21",
+        "categoryId": "2"
+    }, {
+        "id": "8",
+        "name": "LG Grand",
+        "price": "49.34",
+        "categoryId": "2"
+    }]
+}
