@@ -1,4 +1,4 @@
-var BASE_URL = location.href + "/data/"
+var BASE_URL = location.href + "data/"
 var PAGE_ROUTES = {
     ALL: "items"
 };
