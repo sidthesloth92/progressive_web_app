@@ -9,6 +9,6 @@
     "start_url": "index.html",
     "background_color": "#252525",
     "theme_color": "#E5637C",
-    "display": "browser",
+    "display": "standalone",
     "orientation": "portrait"
 }
