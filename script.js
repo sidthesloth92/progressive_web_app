@@ -15,8 +15,6 @@ for (var i = 0; i < category_items.length; i++) {
     });
 }
 
-
-
 angular.module("myApp", []).controller('MainController', MainController);
 
 MainController.$inject = ['$scope', '$rootScope', '$q', '$http'];
@@ -91,3 +89,24 @@ function requestNotificationPermission() {
         console.log("Notification permission : ", result);
     });
 }
+
+var menu;
+window.onload = function() {
+
+    menu = document.querySelector('.menu');
+    if (navigator.onLine) {
+        menu.style.background = "#E5637C";
+    } else {
+        menu.style.background = "rgba(238, 238, 238, 0.7)";
+    }
+
+    window.ononline = function(e) {
+        menu.style.background = "#E5637C";
+        console.log('online');
+    };
+
+    window.onoffline = function(e) {
+        console.log('offline');
+        menu.style.background = "rgba(238, 238, 238, 0.7)";
+    };
+};
