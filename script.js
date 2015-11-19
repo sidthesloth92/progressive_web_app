@@ -69,7 +69,7 @@ function registerBroadcastReceiver() {
         var data = event.data;
 
         if (data.command == "updateItems") {
-            updateItems(data.items);
+            //updateItems(data.items);
         }
     };
 }
