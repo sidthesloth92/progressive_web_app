@@ -97,7 +97,7 @@ window.onload = function() {
     if (navigator.onLine) {
         menu.style.background = "#E5637C";
     } else {
-        menu.style.background = "rgba(238, 238, 238, 0.7)";
+        menu.style.background = "dimgrey";
     }
 
     window.ononline = function(e) {
@@ -107,6 +107,6 @@ window.onload = function() {
 
     window.onoffline = function(e) {
         console.log('offline');
-        menu.style.background = "rgba(238, 238, 238, 0.7)";
+        menu.style.background = "dimgrey";
     };
 };
